@@ -15,16 +15,52 @@
 
   <body>
     <nav class="navbar">
-      <a class="navbar-brand" href="#">SneakerHeadz</a>
+      <div class="navbar-brand" href="#">
+        <a href="">
+          <img src="./2_generated copia.png" alt="" />
+          <p>SneakerHeadz</p>
+        </a>
+      </div>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <input id="input" type="text" placeholder="Search..">
+          <input
+            id="input"
+            class="input-search"
+            type="text"
+            placeholder="Search.."
+          />
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#cart">Cart</a>
+          <button href="#cart" id="openSidebar">
+            <img class="" src="./263142 copia.png" alt="" />
+          </button>
         </li>
       </ul>
     </nav>
+
+    <div id="sidebar">
+      <div class="sidebar-top">
+        <h2>Cart</h2>
+        <button id="closeSidebar"></button>
+      </div>
+      <ul id="cartItems"></ul>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to the sneakers world</h1>
+        <p class="hero-subtitle">
+          Discover trends and search for your favourite sneakers
+        </p>
+      </div>
+      <div class="hero-img">
+        <img
+          src="./Air-Jordan-1-Retro-High-Travis-Scott-Product-removebg-preview.png"
+          alt=""
+        />
+        <div class="img-bg"></div>
+      </div>
+    </div>
 
     <div class="main-container">
       <div class="card-container">
@@ -39,6 +75,8 @@
       <h3 id="search">Searched Products</h3>
       <div id="card-deck-search" class="card-deck-big"></div>
     </div>
+
+    <footer></footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script src="./index.js"></script>
