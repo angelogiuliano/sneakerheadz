@@ -4,11 +4,11 @@ const SneaksAPI = require('sneaks-api');
 const sneaks = new SneaksAPI();
 const bodyParser = require('body-parser');
 
-app.use('/static', express.static('/public'));
+app.use('/static', express.static('../public'));
 app.use(express.static('../public'));
 
 app.get('/', (req, res) => {
-  res.sendFile('/public/index.html');
+  res.sendFile('../public/index.html');
 });
 
 let sneakArrTrending = [];
