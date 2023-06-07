@@ -8,7 +8,7 @@ app.use('/static', express.static('../public'));
 app.use(express.static('../public'));
 
 app.get('/', (req, res) => {
-  res.sendFile('../public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 let sneakArrTrending = [];
