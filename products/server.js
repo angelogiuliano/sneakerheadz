@@ -7,8 +7,9 @@ const bodyParser = require('body-parser');
 app.use('/static', express.static('../public'));
 app.use(express.static('../public'));
 
+
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile('/public/index.html', { root: ".." });
 });
 
 let sneakArrTrending = [];
